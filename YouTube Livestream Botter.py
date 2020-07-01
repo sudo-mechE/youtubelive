@@ -69,8 +69,9 @@ class proxy():
             time.sleep(600)
     
     def get_proxy(self):
-        random1 = random.choice(self.splited) #choose a random proxie
-        return random1
+            for i in range(2500):
+            	random1 = self.splited[i]
+            	return random1
     def FormatProxy(self):
 	    proxyOutput = {'https' :'https://'+self.get_proxy()}
 	    return proxyOutput
